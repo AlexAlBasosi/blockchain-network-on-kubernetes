@@ -2,3 +2,17 @@ peer chaincode query -C channel1 -n cc -c '{"Args":["query","a"]}'
 peer chaincode invoke -o blockchain-orderer:31010 -C channel1 -n cc -c '{"Args":["invoke","a","b","20"]}'
 peer chaincode query -C channel1 -n cc -c '{"Args":["query","a"]}'
 peer chaincode query -C channel1 -n cc -c '{"Args":["query","b"]}'
+
+
+IBM Cloud Registration Link: 
+
+ibm.biz/devfest
+
+
+IBM Cloud CLI Install Link: https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html
+Kubectl CLI Install Link: https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+
+https://github.com/IBM-Cloud-DevFest-2018/blockchain-network-on-kubernetes
+
+chmod +x setup_blockchainNetwork.sh
