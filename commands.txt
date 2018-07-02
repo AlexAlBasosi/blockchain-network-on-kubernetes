@@ -1,6 +1,9 @@
-peer chaincode query -C channel1 -n cc -c '{"Args":["query","a"]}'
+peer chaincode query -C channel1 -n cc -c '{"Args":["query","a"]}'.
+
 peer chaincode invoke -o blockchain-orderer:31010 -C channel1 -n cc -c '{"Args":["invoke","a","b","20"]}'
+
 peer chaincode query -C channel1 -n cc -c '{"Args":["query","a"]}'
+
 peer chaincode query -C channel1 -n cc -c '{"Args":["query","b"]}'
 
 
@@ -16,3 +19,13 @@ Kubectl CLI Install Link: https://kubernetes.io/docs/tasks/tools/install-kubectl
 https://github.com/IBM-Cloud-DevFest-2018/blockchain-network-on-kubernetes
 
 chmod +x setup_blockchainNetwork.sh
+
+
+
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+
+replace /etc/kubernetes/admin.conf with /Users/<user>/Downloads/kubeconfig
+
+/Users/alexanderalbasosi/Downloads
